@@ -3,7 +3,7 @@ Predict the housing price using artificial neural network.
 
 Regression Type Problem
 
-Data Columns:
+Data Columns: </br>
 o ida: notation for a house 
 o date: Date house was sold 
 o price: Price is prediction target
