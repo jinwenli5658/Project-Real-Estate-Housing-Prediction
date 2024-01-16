@@ -1,7 +1,11 @@
 # Project-Real-Estate-Housing-Prediction
 Predict the housing price using artificial neural network.
 
-Regression Type Problem
+Regression Type Problem </br>
+Data Scaling </br>
+**from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
+X_scaled = scaler.fit_transform(X)**
 
 Data Columns: </br>
 o ida: notation for a house </br>
