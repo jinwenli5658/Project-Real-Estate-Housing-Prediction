@@ -27,7 +27,6 @@ model.compile(optimizer='Adam', loss = 'mean_squared_error') </br>
 epochs_hist = model.fit(X_train, y_train, epochs = 100, batch_size = 50, validation_split=0.2)  </br>
 epoch means the number of times we feed in the entire training data set and update the network weights. </br>
 
-**
 
 ## Model Evaluation: </br> 
 'Epoch number' vs. 'Training Loss',  </br>
