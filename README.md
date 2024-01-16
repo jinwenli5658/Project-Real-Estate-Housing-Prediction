@@ -3,17 +3,17 @@ Predict the housing price using artificial neural network.
 
 Regression Type Problem </br>
 Data Scaling </br>
-**from sklearn.preprocessing import MinMaxScaler </br>
+from sklearn.preprocessing import MinMaxScaler </br>
 scaler = MinMaxScaler() </br>
-X_scaled = scaler.fit_transform(X)**
+X_scaled = scaler.fit_transform(X) </br>
 
-Training/Testing Data Split
-**from sklearn.model_selection import train_test_split </br>
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.25)**
+Training/Testing Data Split </br>
+from sklearn.model_selection import train_test_split </br>
+X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.25)
 
 
-Deep Learning Model:
-**import tensorflow.keras  </br>
+Deep Learning Model: </br>
+import tensorflow.keras  </br>
 from tensorflow.keras.models import Sequential </br>
 from tensorflow.keras.layers import Dense </br>
 
