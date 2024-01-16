@@ -24,8 +24,9 @@ model.add(Dense(1, activation='linear')) </br>
 model.summary()
 
 model.compile(optimizer='Adam', loss = 'mean_squared_error') </br>
+`Adam optimization is a stochastic gradient descent method that is based on adaptive estimation of first-order and second-order moments.
 epochs_hist = model.fit(X_train, y_train, epochs = 100, batch_size = 50, validation_split=0.2)  </br>
-epoch means the number of times we feed in the entire training data set and update the network weights. </br>
+`epoch means the number of times we feed in the entire training data set and update the network weights. </br>
 
 
 ## Model Evaluation: </br> 
