@@ -31,7 +31,7 @@ epochs_hist = model.fit(X_train, y_train, epochs = 100, batch_size = 50, validat
 
 ## Model Evaluation: </br> 
 'Epoch number' vs. 'Training Loss',  </br>
-'Epoch number' vs 'Validation Loss'] </br>
+'Epoch number' vs 'Validation Loss' </br>
 y_predict_orig = scaler.inverse_transform(y_predict) </br>
 *Transform y back to the oringinal units.
 
