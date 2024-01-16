@@ -26,14 +26,27 @@ model.summary()
 model.compile(optimizer='Adam', loss = 'mean_squared_error') </br>
 *Adam optimization is a stochastic gradient descent method that is based on adaptive estimation of first-order and second-order moments. </br>
 epochs_hist = model.fit(X_train, y_train, epochs = 100, batch_size = 50, validation_split=0.2)  </br>
-*epoch means the number of times we feed in the entire training data set and update the network weights. </br>
+*Epoch means the number of times we feed in the entire training data set and update the network weights. </br>
 
 
 ## Model Evaluation: </br> 
 'Epoch number' vs. 'Training Loss',  </br>
 'Epoch number' vs 'Validation Loss'] </br>
+y_predict_orig = scaler.inverse_transform(y_predict) </br>
+*Transform y back to the oringinal units.
 
 RMSE/MSE/MAE/R2/Adjusted R2 </br>
+from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+from math import sqrt
+
+RMSE = np.sqrt(mean_squared_error(y_test_orig, y_predict_orig))
+MSE = mean_squared_error(y_test_orig, y_predict_orig)
+MAE = mean_absolute_error(y_test_orig, y_predict_orig)
+r2 = r2_score(y_test_orig, y_predict_orig)
+adj_r2 = 1-(1-r2)*(n-1)/(n-k-1)
+
+## Model Tuning: </br>
+Include all varibles, the coefficient of determination increased from 53% to 84%.
 
 ## Data Columns: </br>
 o ida: notation for a house </br>
