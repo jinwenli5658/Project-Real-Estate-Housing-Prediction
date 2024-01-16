@@ -1,18 +1,17 @@
 # Project: Real Estate Housing Prediction (Deep Learning, ANN)
-Predict the housing price using artificial neural network.
+Predict the housing price using artificial neural network. Regression Type Problem 
 
-Regression Type Problem </br>
-Data Scaling </br>
+## Data Scaling </br>
 from sklearn.preprocessing import MinMaxScaler </br>
 scaler = MinMaxScaler() </br>
 X_scaled = scaler.fit_transform(X) </br>
 
-Training/Testing Data Split </br>
+## Training/Testing Data Split </br>
 from sklearn.model_selection import train_test_split </br>
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.25)
 
 
-Deep Learning Model: </br>
+## Deep Learning Model: </br>
 import tensorflow.keras  </br>
 from tensorflow.keras.models import Sequential </br>
 from tensorflow.keras.layers import Dense </br>
@@ -30,13 +29,13 @@ epoch means the number of times we feed in the entire training data set and upda
 
 **
 
-Model Evaluation: </br> 
+## Model Evaluation: </br> 
 'Epoch number' vs. 'Training Loss',  </br>
 'Epoch number' vs 'Validation Loss'] </br>
 
 RMSE/MSE/MAE/R2/Adjusted R2 </br>
 
-Data Columns: </br>
+## Data Columns: </br>
 o ida: notation for a house </br>
 o date: Date house was sold  </br>
 o price: Price is prediction target </br>
