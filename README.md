@@ -36,13 +36,13 @@ y_predict_orig = scaler.inverse_transform(y_predict) </br>
 *Transform y back to the oringinal units.
 
 RMSE/MSE/MAE/R2/Adjusted R2 </br>
-from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error </br>
 from math import sqrt
 
-RMSE = np.sqrt(mean_squared_error(y_test_orig, y_predict_orig))
-MSE = mean_squared_error(y_test_orig, y_predict_orig)
-MAE = mean_absolute_error(y_test_orig, y_predict_orig)
-r2 = r2_score(y_test_orig, y_predict_orig)
+RMSE = np.sqrt(mean_squared_error(y_test_orig, y_predict_orig)) </br>
+MSE = mean_squared_error(y_test_orig, y_predict_orig) </br>
+MAE = mean_absolute_error(y_test_orig, y_predict_orig) </br>
+r2 = r2_score(y_test_orig, y_predict_orig) </br>
 adj_r2 = 1-(1-r2)*(n-1)/(n-k-1)
 
 ## Model Tuning: </br>
