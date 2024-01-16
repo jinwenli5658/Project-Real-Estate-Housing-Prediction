@@ -1,4 +1,4 @@
-# Project-Real-Estate-Housing-Prediction
+# Project: Real Estate Housing Prediction (Deep Learning, ANN)
 Predict the housing price using artificial neural network.
 
 Regression Type Problem </br>
